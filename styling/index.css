@@ -1,20 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Modak&family=Rammetto+One&family=Ranchers&display=swap');
+
 body{
     overflow-x: hidden;
     background-color: antiquewhite;
 }
 
 .title{
-    font-size: large;
+    font-family: 'Gasoek One', sans-serif;
+    font-size: 150rem;
+    color: black;
 }
 
 .line {
-    border-bottom: 1px solid #888;
+    border-bottom: 5px solid #202020;
+    width: 75%;
 }
 
 
 .nameSection{
     height: 100vh;
     background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .aboutSection{
@@ -31,11 +39,23 @@ body{
     background-color: antiquewhite;
 }
 
+.background{
+    z-index: -1;
+}
+
 .circle {
-    height: 50px;
-    width: 50px;
+    height: 50%;
+    width: 50%;
     background-color: #adb6ee;
     border-radius: 50%;
+}
+
+.opcaity{
+    opacity: .8;
+}
+
+.blur{
+    filter: blur(80px);
 }
 
 
