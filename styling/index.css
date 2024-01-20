@@ -1,0 +1,41 @@
+body{
+    overflow-x: hidden;
+    background-color: antiquewhite;
+}
+
+.title{
+    font-size: large;
+}
+
+.line {
+    border-bottom: 1px solid #888;
+}
+
+
+.nameSection{
+    height: 100vh;
+    background-color: pink;
+}
+
+.aboutSection{
+    height: 100vh;
+    background-color: blue;
+}
+
+.gameSection{
+    height:  100vh;
+    background-color: green;
+}
+
+.solid-box{
+    background-color: antiquewhite;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    background-color: #adb6ee;
+    border-radius: 50%;
+}
+
+
