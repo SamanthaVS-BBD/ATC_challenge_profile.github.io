@@ -1,70 +1,349 @@
-@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Modak&family=Rammetto+One&family=Ranchers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Poppins:wght@300;400&display=swap');
 
 body{
     overflow-x: hidden;
-    background-color: antiquewhite;
+    background-color: #fffaef;
+    position: relative;
+}
+
+.secondary-txt{
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+}
+
+.linktxt{
+    text-decoration: none;
 }
 
 .main-wrapper{
-    display: grid;
-    z-index: 0;
+    display: flex;
+    /* row-gap: 2em;
+    column-gap: 2em; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
 }
 
 .title{
     font-family: 'Gasoek One', sans-serif;
-    font-size: calc(1.5rem + 3vw);
+    font-weight: 150;
+    font-kerning: auto;
+    font-size: clamp(2.8rem, 6vw, 8rem);
     color: black;
+    text-align: left;
 }
 
 .line {
-    border-bottom: 5px solid #202020;
-    width: 75%;
+    border-bottom: 1vh solid #202020;
+    width: 70vw;
+    border-radius: 100px;
 }
 
+.code-icon{
+    font-size: clamp(1.5rem, 2vw, 4rem);
+}
 
 .nameSection{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
     height: 100vh;
-    display: flex;
+    width: 100vw;
     justify-content: center;
     align-items: center;
-    margin: 0%;
 }
 
+.name{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 2fr;
+}
+
+.jobTitle{
+    font-size: clamp(0.9rem, 1.5vw, 5rem);
+    font-family: 'Poppins', sans-serif;
+    color: #343434;
+    text-align: right;
+}
+
+.break{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ABOUT ME SECTION */
+
+
+
 .aboutSection{
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 3fr 0.5fr;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    /* background-color: blue; */
+    width: 100vw;
+    background-color: #fffaef;
+    border-bottom: 0.1rem solid #202020;
+}
+
+.aboutmeTxt{
+    font-size: clamp(0.8rem, 1.2vw, 1.5rem);
+    width: 100%;
+}
+
+.section-title{
+    font-family: 'Gasoek One', sans-serif;
+    font-weight: 150;
+    font-size: clamp(3rem, 7vw, 10rem);
+    color: black;
+}
+
+.section-title-s{
+    font-family: 'Gasoek One', sans-serif;
+    font-weight: 150;
+    font-kerning: auto;
+    font-size: clamp(3rem, 6vw, 9rem);
+    color: black;
+}
+
+.circle-image-container{
+    overflow: hidden;
+    width: 30vh; 
+    height: 30vh; 
+    border-radius: 50%;
+    outline-style: solid;
+    outline-color: black;
+    justify-content: center;
+}
+
+.profileImage{
+    width: 30vh; 
+    height: 40vh; 
+}
+
+
+
+.technicalAbilities{
+    height: 160vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 5%;
+
+}
+
+.repCol{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    column-gap: 3%;
+    text-align: center;
+}
+
+.marginTB{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.marginT{
+    margin-top: 5%;
+}
+
+.innerTA{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+    column-gap: 3%;
+}
+
+
+
+/* GAME SECTION */
+
+.centerTxt{
+    text-align: center;
+}
+
+.padding{
+    padding: 3%;
 }
 
 .gameSection{
-    height:  100vh;
-    /* background-color: green; */
+    background-color: #fffaef;
+    border-top: 0.1rem solid #202020;
+    border-bottom: 0.1rem solid #202020;
+    height: 100vh;
+    width: 100vw;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr; */
+    /* justify-content: center;
+    align-items: center;
+    box-sizing: border-box; */
+    margin-bottom: 3%;
+}
+
+.games{
+    padding-left: 5%;
+    padding-right: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 10%;
+    column-gap: 5%;
+}
+
+.icon-size{
+    font-size: clamp(3rem, 6vw, 9rem);
+}
+
+.box{
+    padding: 15%;
+    background-color: #adb6ee;
+    border-radius: 10px;
+}
+
+.box-outline{
+    padding: 15%;
+    outline-style: solid;
+    outline-color: black;
+    border-radius: 10px;
+    box-shadow: 2px 10px;
+}
+
+.contactMe{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    width: 100vw;
 }
 
 .solid-box{
-    background-color: antiquewhite;
+    background-color: rgb(153, 198, 187);
 }
 
+
+/* BACKGROUND SECTION */
+
 .background{
-    z-index: -1;
-    height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    z-index: -1;
+    width: 100vw;
+    position: fixed;
+}
+
+.background-parralax{
+    display: grid;
+    grid-template-areas: "stack";
+}
+
+.background-parralax > * {
+    grid-area: stack;
 }
 
 .s-circle {
-    height: 50%;
-    width: 50%;
     background-color: #adb6ee;
+    width: 20vw;
+    height: 40vh;
     border-radius: 50%;
+    
 }
 
+.m-circle{
+    background-color: #adb6ee;
+    width: 40vw;
+    height: 80vh;
+    border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
+}
+
+
+.z-background{
+    z-index: -1;
+}
+
+.z-middleground{
+    z-index: 1;
+}
+
+.z-foreground{
+    z-index: 2;
+}
+
+.first-circle{
+    grid-column: 1;
+    grid-row: 1;
+    background-color: pink;
+}
 
 .opcaity{
     opacity: .8;
 }
 
 .blur{
-    filter: blur(80px);
+    filter: blur(20px);
+}
+
+.c-blue{
+    background-color: blue;
 }
 
 
+
+
+@media (max-width: 1150px) {
+    .name{
+        grid-template-columns: 0.5fr 3fr 0.5fr
+    }
+
+    /* .section-title{
+        font-size: calc(3rem + 2vw);
+    }
+
+    .secondary-txt{
+        font-size: calc(0.3rem + 0.5vw);
+    } */
+}
+
+@media (max-width: 576px) {
+    
+    .aboutSection{
+        grid-template-columns: 1fr;
+    }
+    
+    .innerTA{
+        grid-template-columns: 1fr;
+        display: grid;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .section-title{
+        text-align: center;
+    }
+
+    .aboutmeTxt{
+        width: 80%;
+        display: grid;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .games{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .name{
+        padding: 10%;
+        grid-template-columns: 1fr
+    }
+}
+
+@media (max-width: 1200px) {
+    .name{
+        padding: 10%;
+        grid-template-columns: 1fr
+    }
+}
