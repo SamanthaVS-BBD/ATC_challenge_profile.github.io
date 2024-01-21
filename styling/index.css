@@ -5,9 +5,14 @@ body{
     background-color: antiquewhite;
 }
 
+.main-wrapper{
+    display: grid;
+    z-index: 0;
+}
+
 .title{
     font-family: 'Gasoek One', sans-serif;
-    font-size: 25rem;
+    font-size: calc(1.5rem + 3vw);
     color: black;
 }
 
@@ -27,12 +32,12 @@ body{
 
 .aboutSection{
     height: 100vh;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 .gameSection{
     height:  100vh;
-    background-color: green;
+    /* background-color: green; */
 }
 
 .solid-box{
@@ -41,14 +46,18 @@ body{
 
 .background{
     z-index: -1;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.circle {
+.s-circle {
     height: 50%;
     width: 50%;
     background-color: #adb6ee;
     border-radius: 50%;
 }
+
 
 .opcaity{
     opacity: .8;
