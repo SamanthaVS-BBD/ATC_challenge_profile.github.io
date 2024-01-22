@@ -116,6 +116,20 @@ body{
     font-weight: 150;
     font-size: clamp(3rem, 7vw, 10rem);
     color: black;
+    transition: all 0.6s;
+}
+
+.section-title:hover{
+    font-size: clamp(3.5rem, 8vw, 10.5rem);
+}
+
+@keyframes scaleAnimation {
+    0%, 100%{
+        font-size: clamp(3rem, 7vw, 10rem);
+    }
+    50% {
+        font-size: clamp(3.5rem, 8vw, 10.5rem);
+    }
 }
 
 .section-title-s{
