@@ -2,8 +2,7 @@
 
 body{
     overflow-x: hidden;
-    background-color: #fffaef;
-
+    background-color: #f8fbff;
 }
 
 .secondary-txt{
@@ -15,10 +14,12 @@ body{
     text-decoration: none;
 }
 
+.linktxt:hover{
+    color: #adb6ee;
+}
+
 .main-wrapper{
     display: flex;
-    /* row-gap: 2em;
-    column-gap: 2em; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -43,6 +44,11 @@ body{
     border-bottom: 1vh solid #202020;
     width: 70vw;
     border-radius: 100px;
+    transition: all 0.5s ease;
+}
+
+.line:hover{
+    width: 80vw;
 }
 
 .line-small{
@@ -84,10 +90,9 @@ body{
     align-items: center;
 }
 
+
+
 /* ABOUT ME SECTION */
-
-
-
 .aboutSection{
     padding: 5%;
     display: grid;
@@ -121,30 +126,12 @@ body{
     color: black;
 }
 
-.circle-image-container{
-    overflow: hidden;
-    width: 30vh; 
-    height: 30vh; 
-    border-radius: 50%;
-    outline-style: solid;
-    outline-color: black;
-    justify-content: center;
-}
-
-.profileImage{
-    width: 30vh; 
-    height: 40vh; 
-}
-
-
-
 .technicalAbilities{
-    height: 160vh;
+    /* height: 160vh; */
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 5%;
-
 }
 
 .repCol{
@@ -200,6 +187,7 @@ body{
     height: 100vh;
     width: 100vw;
     margin-bottom: 3%;
+    padding-bottom: 5%;
 }
 
 .games{
@@ -245,9 +233,6 @@ body{
     font-size: clamp(0.6rem, 1.2vw, 1.5rem);
 }
 
-.solid-box{
-    background-color: rgb(153, 198, 187);
-}
 
 
 /* BACKGROUND SECTION */
@@ -293,35 +278,13 @@ body{
     width: 40vw;
     height: 80vh;
     border-radius: 40% 60% 60% 40% / 70% 30% 70% 30%;
-    
 }
-
 
 .m-circle-two{
     background-color: #d8adee;
     width: 40vw;
     height: 80vh;
     border-radius: 50% 60% 70% 70% / 60% 50% 40% 30%;
-}
-
-
-
-.z-background{
-    z-index: -1;
-}
-
-.z-middleground{
-    z-index: 1;
-}
-
-.z-foreground{
-    z-index: 2;
-}
-
-.first-circle{
-    grid-column: 1;
-    grid-row: 1;
-    background-color: pink;
 }
 
 .opcaity{
@@ -338,20 +301,10 @@ body{
 }
 
 
-
-
 @media (max-width: 1150px) {
     .name{
         grid-template-columns: 0.5fr 3fr 0.5fr
     }
-
-    /* .section-title{
-        font-size: calc(3rem + 2vw);
-    }
-
-    .secondary-txt{
-        font-size: calc(0.3rem + 0.5vw);
-    } */
 }
 
 @media (max-width: 576px) {
@@ -380,6 +333,10 @@ body{
 
     .games{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .m-circle{
+        height: 71vh;
     }
 }
 
